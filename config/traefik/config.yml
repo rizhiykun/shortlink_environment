@@ -1,0 +1,10 @@
+http:
+  routers:
+    nginx:
+      rule: "Host(`symfony.local`)"
+      service: nginx
+  services:
+    nginx:
+      loadBalancer:
+        servers:
+          - url: "http://nginx:80"
