@@ -37,6 +37,7 @@ make up
 cd shortener
 make build
 ```
+don`t forget to change .env file before build
 
 
 ## Tests
